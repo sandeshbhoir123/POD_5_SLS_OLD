@@ -1,0 +1,214 @@
+*{
+	/* padding:0; */
+	/* margin:0; */
+	text-decoration:none;
+	list-style:none;
+	box-sizing:border-box;
+}
+html{
+	font-family:"helvetica neue","Arial",sans-serif;
+}
+body {
+	background-color:#ffffff;
+	margin:0;
+}
+/*header styling*/
+header {
+	height:60px;
+	background-color:#ffffff;
+}
+#header-container {
+	width:95%;
+	margin:auto;
+	}
+.col-3 {
+	width:33%;/*dividing nav bar into 3 columns*/
+	float:left;
+}
+.logo{
+	padding-top: 7px;/*padding from top for logo*/
+}
+menu {
+	margin-top: 32px;/*Margin from top for menu items-home,about etc*/
+}
+.menu li { /*styling menu items (home,about etc)*/
+	list-style-type: none;
+	display: inline;
+	font-size: 1em;
+	color: #8e8e8e;
+	padding-right: 30px;
+}
+/*Styling the suggestion button starts here..BUT NAMED IT AS SEARCHBTN*/
+.SearchBTN{  
+	background-color: #6dc77a;
+	border-radius: 28px;
+	-moz-border-radius: 28px;
+	-wekit-border-radius: 28px;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px 26px;
+	margin-top: 11px;
+	display: inline-block;
+	font-size: 17px;
+	float: right;
+}
+/*Styling the SUGGESTION button ends here*/
+/*Styling the LOGIN button login here*/
+.loginBTN{
+	background-color: blue;
+	border-radius: 28px;
+	-moz-border-radius: 28px;
+	-wekit-border-radius: 28px;
+	text-decoration: none;
+	color: #ffffff;
+	padding: 10px 26px;
+	margin-top: 11px;
+	display: inline-block;
+	font-size: 17px;
+	float: right;
+}
+/*Styling the LOGIN button starts here*/
+#top-section-main {
+	background: url(../Images/200.jpg);/*Adding background image*/
+	height:740px;
+	border:none;
+}
+#top-section-content {
+	width: 60%;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:0;
+}
+#top-section-content h1 { /*Styling H1 tag */
+	font-size: 4em;
+	font-weight: 300;
+	color: #ffffff;
+	text-align: center;
+	margin-top:0;
+	padding-top:100px;
+	margin-bottom:15px;
+}
+#top-section-content p { /* Styling p tag*/
+	font-size: 1.3em;
+	font-weight: 400;
+	color: #ffffff;
+	text-align: center;
+}
+#top-section-content h3 { /* styling h3 tag*/
+	font-size: 1.7em;
+	font-weight: 400;
+	color: #FF4500;
+	text-align: center;
+	margin-top:0;
+	padding-top:40px;
+	margin-bottom:15px;
+}
+/*STYLING THE SCHOOL LIST AND BY SEARCH BUTTONS starts here*/
+#buttons {
+	height:55vh;
+	justify-content:center;
+	align-items:center;
+	box-sizing:border-box;
+}
+.btn1{
+	position:relative;
+	width:330px;
+	height:75px;
+	font-size:1rem;
+	text-transform:uppercase;
+	background:none;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	color:#008080;
+	font-family:'Lato',sans-serif;
+	letter-spacing: .25px;
+	transition: .5s;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #ffffff;
+	background-color:#F0FFFF;
+	border-radius:225px;
+	float:left;
+}
+.btn2 {
+	position:relative;
+	width:330px;
+	height:75px;
+	font-size:1rem;
+	text-transform:uppercase;
+	background:none;
+	border:none;
+	outline:none;
+	cursor:pointer;
+	color:#008080;
+	font-family:'Lato',sans-serif;
+	letter-spacing: .25px;
+	transition: .5s;
+	text-decoration-line: underline;
+	text-decoration-style: solid;
+	text-decoration-color: #ffffff;;
+	background-color:#F0FFFF;
+	border-radius:225px;
+	float:right;
+}
+/*button hover effect starts here*/
+.btn1:after,.btn1:before{
+	content:'';
+	position:absolute;
+	width:2px;
+	height:0;
+	bottom:0;
+	background-color:#fff;
+	transition:.5s;
+	transition-delay:.5s;
+}
+.btn2:after,.btn2:before{
+	content:'';
+	position:absolute;
+	width:2px;
+	height:0;
+	bottom:0;
+	background-color:#fff;
+	transition:.5s;
+	transition-delay:.5s;
+}
+.btn1:after, .btn2:after {
+	left:0;
+}
+.btn1:before, .btn2:before {
+	right:0;
+}
+span{
+	position:absolute;
+	width:100%;
+	height:0%;
+	top:0%;
+	left:0%;
+	background-color:#fff;
+	z-index:-1;
+	transition:.5s;
+}
+.btn1:hover:before, .btn1:hover:after, .btn2:hover:before, .btn2:hover:after{
+	height:100%;
+	transition-delay:0s;
+}
+.btn1:hover,.btn2:hover > span{
+	height:20%;
+	transition-delay:.5s;
+}
+.btn1:hover,.btn2:hover{
+	color:#ffffff;
+	letter-spacing:2.5px;
+	transition-delay:.5s;
+	background-color:#008080;
+	border-radius:0px;
+	position:relative;
+	width: 390px;
+	height:70px;
+	font-size:1.4rem;
+}
+
+
+/*button hover effect ends here*/
+/*STYLING THE SCHOOL LIST AND BY SEARCH BUTTONS ends here*/

@@ -1,0 +1,138 @@
+body{
+    background-color: bisque;
+    margin:0;
+    padding:0;
+    background-image: url("https://krmangalam.com/wp-content/uploads/2018/09/education-background-18.jpg");
+}
+.UpperTitle{
+    background-color:darkorange;
+    width: 1280px;
+    text-align: center;
+    height: 70px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 8px #000000;
+    font-family:tahoma;
+    font-size: larger;
+    animation: slide 1s ease-in;
+    overflow: hidden;
+    position: relative; 
+      
+}
+.UpperTitle:hover{
+    transform: scale(1.15);
+
+}
+.HeadTitle{
+    margin-top: 15px;
+    position: relative;
+    animation: fade-in 2s;
+}
+.demo-bg {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+  .logo{
+      width: 40px;
+      height: 50px;
+  }
+  .schoolimg{
+      width: 1280px;
+      height: 500px;
+      margin: 0;
+  }
+  .imgdiv{
+    background-color:rgb(255, 140, 0);
+    background: rgba(255,140,0,.6);
+    animation: slide 2s ease-in;
+    overflow: hidden;
+    position: relative;
+
+  }
+  .about{
+    background-color:rgb(255, 140, 0);
+    padding: 1%;
+    background: rgba(255,140,0,.6);
+    animation: slide 2s ease-in;
+    overflow: hidden;
+    position: relative; 
+
+  }
+  p{
+      font-size: larger;
+  }
+  .details{
+    background: rgba(255, 196, 0, 0.6);  
+    padding: 1%;
+    animation: slide 3s ease-in;
+    overflow: hidden;
+    position: relative; 
+
+  }
+  .icon{
+    width: 35px;
+    height: 35px;
+
+  }
+  
+  table{
+      border-spacing: 20px;
+  }
+  td{
+      font-weight: bold;
+      font-size: larger;
+  }
+  .website{
+      border-spacing: 0ch;
+  }
+  a{
+      text-decoration: none;
+      color: #000000;
+      text-align: center;
+  }
+  .row{
+      width: 90px;
+  }
+  .Click{
+    background: rgba(211, 71, 6, 0.6);
+    width: 100px;
+    padding-left: 10px;
+    border-radius: 9px;
+
+  }
+  @keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes slide{
+    0%{
+        transform: skewX(53deg) translateX(-500px);
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    62%{
+        transform: skewX(0deg) translateX(30px);
+    }
+    70%{
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+    80%{
+        transform: skew(0deg) translate(0);
+    }
+    90%{
+        transform: skew(-5deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}

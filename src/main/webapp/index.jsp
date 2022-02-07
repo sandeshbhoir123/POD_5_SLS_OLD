@@ -1,0 +1,1 @@
+<%response.sendRedirect("/The-School-Directory/welcome");%>

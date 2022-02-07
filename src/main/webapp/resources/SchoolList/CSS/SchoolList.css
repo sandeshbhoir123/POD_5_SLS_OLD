@@ -1,0 +1,112 @@
+body{
+    background-color: bisque;
+    margin:0;
+    padding:0;
+    background-image: url("https://krmangalam.com/wp-content/uploads/2018/09/education-background-18.jpg");
+}
+.UpperTitle{
+    background-color:darkorange;
+    width: 1280px;
+    text-align: center;
+    height: 70px;
+    padding-top: 1px;
+    padding-bottom: 10px;
+    box-shadow: 10px 10px 8px #000000;
+    font-family:tahoma;
+    font-size: larger;
+    animation: slide 1s ease-in;
+    overflow: hidden;
+    position: relative; 
+      
+}
+.UpperTitle:hover{
+    transform: scale(1.15);
+
+}
+.demo-bg {
+    opacity: 0.2;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+  }
+.HeadTitle{
+    margin-top: 15px;
+    position: relative;
+    animation: fade-in 2s;
+}
+
+table{
+   
+    margin-top: 50px;
+    margin-right: 20%;
+    margin-left: 10%;
+    
+    
+}
+td{
+    width: 30%;
+    height: 60px;
+    padding-right: 40px;
+    padding-top: 40px;
+    
+}
+.cell{
+    background-color: chocolate;
+    width: 470px;
+    padding: 5px;
+    text-align: center;
+    border-radius: 5px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size:xx-large;
+    box-shadow: 10px 10px 8px #000000;
+    animation: fade-in 5s;
+    
+}
+.cell:hover{
+    transform: scale(1.15);
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: rgb(255, 238, 5);
+}
+
+@keyframes fade-in{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes slide{
+    0%{
+        transform: skewX(53deg) translateX(-500px);
+    }
+    60%{
+        transform: translateX(0px);
+    }
+    62%{
+        transform: skewX(0deg) translateX(30px);
+    }
+    70%{
+        transform: skew(-20deg);
+        opacity: 1;
+    }
+    80%{
+        transform: skew(0deg) translate(0);
+    }
+    90%{
+        transform: skew(-5deg);
+    }
+    100%{
+        transform: skew(0deg);
+    }
+}
+
+
